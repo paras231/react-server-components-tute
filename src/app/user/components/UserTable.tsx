@@ -6,7 +6,7 @@ type userTableProps = {
 };
 
 const UserTable = ({ data }: userTableProps) => {
-  console.log(data);
+  
 
   return (
     <>
