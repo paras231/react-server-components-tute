@@ -7,7 +7,7 @@ const Page = () => {
         Dash board setting page
       </h1>
       <div className="flex justify-center items-center">
-        <button className="bg-blue-700 rounded-md border-none outline-none cursor-pointer p-2 text-white">
+        <button className="bg-blue-700 rounded-md border-none outline-none cursor-pointer p-2 text-white mt-20">
           <Link href={"/dashboard"}>Go Back</Link>
         </button>
       </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+const Userlayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <div>
@@ -17,4 +17,4 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default DashboardLayout;
+export default Userlayout;

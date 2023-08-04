@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 
 type cardProps = {
-  data: [];
+  data: any;
 };
- 
+
 const MovieCard = ({ data }: cardProps) => {
   const [cardState, setCardState] = useState<Boolean>(false);
   const handleCardState = (id: number, card: any) => {
