@@ -1,7 +1,7 @@
 import React from "react";
 import UserTable from "./components/UserTable";
 const fetchUsers = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   return res.json();
 };
 

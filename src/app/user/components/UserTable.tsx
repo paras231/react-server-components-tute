@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
-
+import Link from "next/link";
 type userTableProps = {
   data: [];
 };
 
 const UserTable = ({ data }: userTableProps) => {
-  
-
   return (
     <>
       <h1>User Table</h1>
@@ -25,24 +22,24 @@ const UserTable = ({ data }: userTableProps) => {
           <table className="w-full table-auto text-sm text-left">
             <thead className="bg-gray-50 text-gray-600 font-medium border-b">
               <tr>
-                <th className="py-3 px-6">Username</th>
-                <th className="py-3 px-6">Email</th>
-                <th className="py-3 px-6">Position</th>
-                <th className="py-3 px-6">Salary</th>
+                <th className="py-3 px-6">Post id</th>
+                <th className="py-3 px-6">Title</th>
               </tr>
             </thead>
             <tbody className="text-gray-600 divide-y">
               {data.map((item: any, idx) => (
                 <tr key={idx}>
-                  <td className="px-6 py-4 whitespace-nowrap">{item.name}</td>
-                  <td className="px-6 py-4 whitespace-nowrap">{item.email}</td>
+                  <Link href={`/user/${item.id}`}>
+                    <td className="px-6 py-4 whitespace-nowrap">{item.id}</td>
+                  </Link>
+                  <td className="px-6 py-4 whitespace-nowrap">{item.title}</td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     {item.position}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">{item.salary}</td>
                 </tr>
               ))}
-            </tbody>
+            </tbody> 
           </table>
         </div>
       </div>

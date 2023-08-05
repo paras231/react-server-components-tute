@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const Loading = () => {
   return (
-    <div className="font-bold text-2xl flex justify-center items-center">
-      Loading data...
-    </div>
+    <>
+      <Skeleton count={100} />
+    </>
   );
 };
 

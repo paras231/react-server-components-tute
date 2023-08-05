@@ -1,11 +1,14 @@
-import React from "react";
+"use client";
 
-const loading = () => {
+import React from "react";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+const Loading = () => {
   return (
     <div>
-      <h1 className="text-2xl font-bold">Loading users...</h1>
+      <Skeleton count={5} />
     </div>
   );
 };
 
-export default loading;
+export default Loading;
